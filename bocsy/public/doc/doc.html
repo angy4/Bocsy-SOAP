@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>doc</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<style type="text/css"> .textElement { font-family: Arial; font-size: 10pt; color: #800000; }</style>
+		<style type="text/css"> .textAttr { font-family: Arial; font-size: 10pt; color: #FF0000; }</style>
+		<style type="text/css"> .textContents { font-family: Arial; font-size: 10pt; color: #000000; }</style>
+		<style type="text/css"> .textOperator { font-family: Arial; font-size: 10pt; color: #0000FF; }</style>
+		<style type="text/css"> .schemaHeader { font-family: Arial; font-size: 11pt; color: #000000; }</style>
+		<style type="text/css"> .schemaHeader2 { font-family: Arial; font-size: 11pt; font-weight: bold; color: #000000; }</style>
+		<style type="text/css"> .elementHeader { font-family: Arial; font-size: 10pt; color: #000000; }</style>
+		<style type="text/css"> .elementHeader2 { font-family: Arial; font-size: 10pt; font-weight: bold; color: #000000; }</style>
+		<style type="text/css"> .schemaName { font-family: Arial; font-size: 8pt; font-weight: bold; color: #000000; }</style>
+		<style type="text/css"> .schemaSubTitle { font-family: Arial; font-size: 8pt; color: #808080; }</style>
+		<style type="text/css"> .schemaSubData { font-family: Arial; font-size: 8pt; color: #000000; }</style>
+		<style type="text/css"> .wsdlName { font-family: Tahoma; font-size: 10pt; font-weight: bold; color: #000000; }</style>
+		<style type="text/css"> .wsdlSubTitle { font-family: Tahoma; font-size: 8pt; color: #808080; }</style>
+		<style type="text/css"> .wsdlSubData { font-family: Tahoma; font-size: 8pt; color: #000000; }</style>
+		<style type="text/css"> .wsdlWhite { font-family: Tahoma; font-size: 8pt; color: #808080; }</style>
+		<style type="text/css"> .wsdlDocumentation { font-family: Tahoma; font-size: 8pt; font-style: italic; color: #000000; }</style>
+		<style type="text/css"> pre { margin-top: 0; margin-bottom: 0; }</style>
+		<style type="text/css"> .table-no-border { line-height: 100%; }</style>
+		<style type="text/css"> .table-border { line-height: 100%; border-style: solid; border-left-color: #ECE9D8; border-top-color: #ECE9D8; border-right-color: #ACA899; border-bottom-color: #ACA899; }</style>
+		<style type="text/css"> .table-borderwithoutoutline { line-height: 100%; border-style: solid; border-width: 0px; }</style>
+		<style type="text/css"> .td-border { border-style: solid; border-width: 1px; border-left-color: #ACA899; border-top-color: #ACA899; border-right-color: #ECE9D8; border-bottom-color: #ECE9D8; }</style>
+		<style type="text/css"> .td-border-left { border-style: solid; border-left-width: 0px; border-top-color: #ACA899; border-right-color: #ECE9D8; border-bottom-color: #ECE9D8; }</style>
+		<style type="text/css"> .td-border-top-left { border-style: solid; border-left-width: 0px; border-top-width: 0px; border-right-color: #ECE9D8; border-bottom-color: #ECE9D8; }</style>
+		<style type="text/css"> .td-border-top { border-style: solid; border-top-width: 0px; border-left-color: #ACA899; border-right-color: #ECE9D8; border-bottom-color: #ECE9D8; }</style>
+		<style type="text/css"> .td-border-top-right { border-style: solid; border-top-width: 0px; border-left-color: #ACA899; border-top-color: #ACA899; border-right-width: 0px; border-bottom-color: #ECE9D8; }</style>
+		<style type="text/css"> .td-border-right { border-style: solid; border-right-width: 0px; border-left-color: #ACA899; border-top-color: #ACA899; border-bottom-color: #ECE9D8; }</style>
+		<style type="text/css"> .td-border-bottom-right { border-style: solid; border-left-color: #ACA899; border-top-color: #ACA899; border-right-width: 0px; border-bottom-width: 0px; }</style>
+		<style type="text/css"> .td-border-bottom { border-style: solid; border-bottom-width: 0px; border-left-color: #ACA899; border-top-color: #ACA899; border-right-color: #ECE9D8; }</style>
+		<style type="text/css"> .td-border-bottom-left { border-style: solid; border-left-width: 0px; border-bottom-width: 0px; border-right-color: #ECE9D8; border-top-color: #ACA899; }</style>
+		<style type="text/css"> .td-border-left-single { border-style: solid; border-left-width: 0px; border-top-width: 0px; border-right-color: #ECE9D8; border-bottom-width: 0px; }</style>
+		<style type="text/css"> .td-border-right-single { border-style: solid; border-left-color: #ACA899; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; }</style>
+		<style type="text/css"> .td-border-single { border-style: solid; border-left-color: #ACA899; border-top-width: 0px; border-right-color: #ECE9D8; border-bottom-width: 0px; }</style>
+	</head>
+	<body>
+		<div>
+			<span class="schemaHeader">WSDL </span>
+			<span class="schemaHeader2">bocsy.wsdl</span>
+			<br />
+			<br />
+			<table class="table-no-border" cellspacing="0" cellpadding="0">
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><span class="wsdlSubTitle">WSDL location:&nbsp;</span></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="file://C:/Users/Angy/Documents/bocsy/bocsy.wsdl"><span class="wsdlName">C:\Users\Angy\Documents\bocsy\bocsy.wsdl</span></a></td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><span class="wsdlSubTitle">targetnamespace:&nbsp;</span></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><span class="wsdlName">http://bocsy.komput.net/bocsy.php</span></td>
+				</tr>
+			</table>
+			<br />
+			<table class="table-no-border" cellspacing="0" cellpadding="0">
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><span class="wsdlSubTitle">services&nbsp;</span></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><span class="wsdlSubTitle">bindings&nbsp;</span></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><span class="wsdlSubTitle">porttypes&nbsp;</span></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><span class="wsdlSubTitle">messages&nbsp;</span></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><span class="wsdlSubTitle">types&nbsp;</span></td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link1"><span class="wsdlName">B&Ouml;CSy&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link2"><span class="wsdlName">Bocsy&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link3"><span class="wsdlName">Bocsy&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link4"><span class="wsdlName">FailureMessage&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link5"><span class="wsdlName">FailureMessage&nbsp;</span></a></td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link6"><span class="wsdlName">LoginRequest&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link7"><span class="wsdlName">Timestamp&nbsp;</span></a></td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link8"><span class="wsdlName">LoginResponse&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link9"><span class="wsdlName">TLastDo&nbsp;</span></a></td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#LinkA"><span class="wsdlName">LogoutRequest&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#LinkB"><span class="wsdlName">LogoutResponse&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#LinkC"><span class="wsdlName">NewMessage&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#LinkD"><span class="wsdlName">TLastDoRequest&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#LinkE"><span class="wsdlName">TLastDoResponse&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#LinkF"><span class="wsdlName">TLastLogRequest&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link10"><span class="wsdlName">TLastLogResponse&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link11"><span class="wsdlName">TLoginRequest&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link12"><span class="wsdlName">TLoginResponse&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link13"><span class="wsdlName">TLogoutRequest&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link14"><span class="wsdlName">TLogoutResponse&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link15"><span class="wsdlName">UserNameRequest&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+					<td align="left" valign="top" style="background-color:#FFFFFF;"><a href="#Link16"><span class="wsdlName">UserNameResponse&nbsp;</span></a></td>
+					<td align="left" valign="top" style="background-color:#FFFFFF;" />
+				</tr>
+			</table>
+			<br />
+			<a name="Link1"> </a>
+			<span class="elementHeader">service </span>
+			<span class="elementHeader2">B&Ouml;CSy</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">diagram&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><img src="doc_p1.png" alt="doc_p1.png" style="border-style:none;" /></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">ports&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link17"> </a><span class="wsdlName">bocsy</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">binding&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link2"><span class="wsdlName">tns:Bocsy</span></a></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">extensibility&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:address</span><span class="textAttr"> location</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:service</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;B&Ouml;CSy</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:port</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;bocsy</span><span class="textOperator">&quot;</span><span class="textAttr"> binding</span><span class="textOperator">=</span><span class="textContents">&quot;tns:Bocsy</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">soap:address</span><span class="textAttr"> location</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:port</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:service</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="Link2"> </a>
+			<span class="elementHeader">binding </span>
+			<span class="elementHeader2">Bocsy</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">diagram&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><img src="doc_p2.png" alt="doc_p2.png" style="border-style:none;" /></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">type&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link3"><span class="wsdlName">tns:Bocsy</span></a></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">extensibility</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:binding</span><span class="textAttr"> style</span><span class="textOperator">=</span><span class="textContents">&quot;rpc</span><span class="textOperator">&quot;</span><span class="textAttr"> transport</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/http</span><span class="textOperator">&quot;/&gt;</span></pre></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">operations&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link18"> </a><span class="wsdlName">Login</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">extensibility&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#Login</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link19"> </a><span class="wsdlName">TLogin</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">extensibility&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#TLogin</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link1A"> </a><span class="wsdlName">Logout</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">extensibility&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#Logout</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link1B"> </a><span class="wsdlName">UserName</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">extensibility&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#UserName</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link1C"> </a><span class="wsdlName">TLogout</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">extensibility&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#TLogout</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link1D"> </a><span class="wsdlName">TLastLog</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">extensibility&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#TLastLog</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link1E"> </a><span class="wsdlName">TLastDo</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">extensibility&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#TLastDo</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span></pre></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Port </span><a href="#Link17"><span class="wsdlName">bocsy</span></a><span class="wsdlSubTitle"> in Service </span><a href="#Link1"><span class="wsdlName">B&Ouml;CSy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:binding</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;Bocsy</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;tns:Bocsy</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">soap:binding</span><span class="textAttr"> style</span><span class="textOperator">=</span><span class="textContents">&quot;rpc</span><span class="textOperator">&quot;</span><span class="textAttr"> transport</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/http</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;Login</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#Login</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:fault</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;Failure</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLogin</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#TLogin</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;Logout</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#Logout</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;UserName</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#UserName</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLogout</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#TLogout</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLastLog</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#TLastLog</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLastDo</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">soap:operation</span><span class="textAttr"> soapAction</span><span class="textOperator">=</span><span class="textContents">&quot;urn:#TLastDo</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:input</span><span class="textOperator">&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+      </span><span class="textOperator">&lt;</span><span class="textElement">soap:body</span><span class="textAttr"> use</span><span class="textOperator">=</span><span class="textContents">&quot;encoded</span><span class="textOperator">&quot;</span><span class="textAttr"> encodingStyle</span><span class="textOperator">=</span><span class="textContents">&quot;http://schemas.xmlsoap.org/soap/encoding/</span><span class="textOperator">&quot;</span><span class="textAttr"> namespace</span><span class="textOperator">=</span><span class="textContents">&quot;http://bocsy.komput.net/bocsy.php</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:output</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:binding</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="Link3"> </a>
+			<span class="elementHeader">porttype </span>
+			<span class="elementHeader2">Bocsy</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">diagram&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><img src="doc_p3.png" alt="doc_p3.png" style="border-style:none;" /></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">operations&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link1F"> </a><span class="wsdlName">Login</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link6"><span class="wsdlName">tns:LoginRequest</span></a></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link8"><span class="wsdlName">tns:LoginResponse</span></a></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">fault</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link4"><span class="wsdlName">tns:FailureMessage</span></a></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link20"> </a><span class="wsdlName">TLogin</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link11"><span class="wsdlName">tns:TLoginRequest</span></a></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link12"><span class="wsdlName">tns:TLoginResponse</span></a></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link21"> </a><span class="wsdlName">Logout</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#LinkA"><span class="wsdlName">tns:LogoutRequest</span></a></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#LinkB"><span class="wsdlName">tns:LogoutResponse</span></a></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link22"> </a><span class="wsdlName">UserName</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link15"><span class="wsdlName">tns:UserNameRequest</span></a></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link16"><span class="wsdlName">tns:UserNameResponse</span></a></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link23"> </a><span class="wsdlName">TLogout</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link13"><span class="wsdlName">tns:TLogoutRequest</span></a></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link14"><span class="wsdlName">tns:TLogoutResponse</span></a></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link24"> </a><span class="wsdlName">TLastLog</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#LinkF"><span class="wsdlName">tns:TLastLogRequest</span></a></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link10"><span class="wsdlName">tns:TLastLogResponse</span></a></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link25"> </a><span class="wsdlName">TLastDo</span><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">input</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#LinkD"><span class="wsdlName">tns:TLastDoRequest</span></a></td></tr><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">output</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#LinkE"><span class="wsdlName">tns:TLastDoResponse</span></a></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">binding </span><a href="#Link2"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:portType</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;Bocsy</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;Login</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:LoginRequest</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:LoginResponse</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:fault</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;Failure</span><span class="textOperator">&quot;</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:FailureMessage</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLogin</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:TLoginRequest</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:TLoginResponse</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;Logout</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:LogoutRequest</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:LogoutResponse</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;UserName</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:UserNameRequest</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:UserNameResponse</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLogout</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:TLogoutRequest</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:TLogoutResponse</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLastLog</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:TLastLogRequest</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:TLastLogResponse</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:operation</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLastDo</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:input</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:TLastDoRequest</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:output</span><span class="textAttr"> message</span><span class="textOperator">=</span><span class="textContents">&quot;tns:TLastDoResponse</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:operation</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:portType</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="Link4"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">FailureMessage</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link26"> </a><span class="wsdlName">error</span></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link5"><span class="wsdlName">tns:FailureMessage</span></a></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link1F"><span class="wsdlName">Login</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;FailureMessage</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;error</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;tns:FailureMessage</span><span class="textOperator">&quot;/&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="Link6"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">LoginRequest</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link27"> </a><span class="wsdlName">username</span><br /><span class="wsdlDocumentation">Need to be &quot;card&quot;, the username is not currently usable</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link28"> </a><span class="wsdlName">password</span><br /><span class="wsdlDocumentation">Need to be crypt only, can be extended to handle mag strip</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link29"> </a><span class="wsdlName">ip</span><br /><span class="wsdlDocumentation">Need to be ip of the remote computer</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link1F"><span class="wsdlName">Login</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;LoginRequest</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;username</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">Need to be &quot;card&quot;, the username is not currently usable</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;password</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">Need to be crypt only, can be extended to handle mag strip</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;ip</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">Need to be ip of the remote computer</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="Link8"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">LoginResponse</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link2A"> </a><span class="wsdlName">session</span><br /><span class="wsdlDocumentation">Send a 22 char session handler, need to be kept in session</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link1F"><span class="wsdlName">Login</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;LoginResponse</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;session</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">Send a 22 char session handler, need to be kept in session</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="LinkA"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">LogoutRequest</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link2B"> </a><span class="wsdlName">session</span><br /><span class="wsdlDocumentation">is the 22 char sesison id</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link21"><span class="wsdlName">Logout</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;LogoutRequest</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;session</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">is the 22 char sesison id</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="LinkB"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">LogoutResponse</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link2C"> </a><span class="wsdlName">success</span><br /><span class="wsdlDocumentation">return 1 on success, don'treturn on errors (SoapFault is to be raised)</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:boolean</span></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link21"><span class="wsdlName">Logout</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;LogoutResponse</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;success</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:boolean</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">return 1 on success, don'treturn on errors (SoapFault is to be raised)</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="LinkC"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">NewMessage</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><br /></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;NewMessage</span><span class="textOperator">&quot;/&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="LinkD"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">TLastDoRequest</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link2D"> </a><span class="wsdlName">session</span><br /><span class="wsdlDocumentation">is the 22 char session id</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link25"><span class="wsdlName">TLastDo</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLastDoRequest</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;session</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">is the 22 char session id</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="LinkE"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">TLastDoResponse</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link2E"> </a><span class="wsdlName">response</span><br /><span class="wsdlDocumentation">reutrn an array of TLastDo</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link9"><span class="wsdlName">tns:TLastDo</span></a></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link25"><span class="wsdlName">TLastDo</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLastDoResponse</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;response</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;tns:TLastDo</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">reutrn an array of TLastDo</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="LinkF"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">TLastLogRequest</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link2F"> </a><span class="wsdlName">session</span><br /><span class="wsdlDocumentation">is the 22 char session id</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link24"><span class="wsdlName">TLastLog</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLastLogRequest</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;session</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">is the 22 char session id</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="Link10"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">TLastLogResponse</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link30"> </a><span class="wsdlName">timestamp</span><br /><span class="wsdlDocumentation">reuturn an array of [start,stop] times (NOT YET)</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><a href="#Link7"><span class="wsdlName">tns:Timestamp</span></a></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link24"><span class="wsdlName">TLastLog</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLastLogResponse</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;timestamp</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;tns:Timestamp</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">reuturn an array of [start,stop] times (NOT YET)</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="Link11"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">TLoginRequest</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link31"> </a><span class="wsdlName">session</span><br /><span class="wsdlDocumentation">Is the 22 char session handler</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link32"> </a><span class="wsdlName">role</span><br /><span class="wsdlDocumentation">Identifier of the role</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:int</span></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link33"> </a><span class="wsdlName">room</span><br /><span class="wsdlDocumentation">Identifier of the room</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><br /><a name="Link34"> </a><span class="wsdlName">job</span><br /><span class="wsdlDocumentation">Identifier of the job</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link20"><span class="wsdlName">TLogin</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLoginRequest</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;session</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">Is the 22 char session handler</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;role</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:int</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">Identifier of the role</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;room</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">Identifier of the room</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;job</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">Identifier of the job</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="Link12"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">TLoginResponse</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link35"> </a><span class="wsdlName">success</span><br /><span class="wsdlDocumentation">Return 1 on success, don't return on error</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:boolean</span></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link20"><span class="wsdlName">TLogin</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLoginResponse</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;success</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:boolean</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">Return 1 on success, don't return on error</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="Link13"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">TLogoutRequest</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link36"> </a><span class="wsdlName">session</span><br /><span class="wsdlDocumentation">is the 22 char session id</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link23"><span class="wsdlName">TLogout</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLogoutRequest</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;session</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">is the 22 char session id</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="Link14"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">TLogoutResponse</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link37"> </a><span class="wsdlName">success</span><br /><span class="wsdlDocumentation">return 1 on success, raise error on errors</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:boolean</span></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link23"><span class="wsdlName">TLogout</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLogoutResponse</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;success</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:boolean</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">return 1 on success, raise error on errors</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="Link15"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">UserNameRequest</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link38"> </a><span class="wsdlName">session</span><br /><span class="wsdlDocumentation">Is the 22 char session</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link22"><span class="wsdlName">UserName</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;UserNameRequest</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;session</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">Is the 22 char session</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<br />
+			<a name="Link16"> </a>
+			<span class="elementHeader">message </span>
+			<span class="elementHeader2">UserNameResponse</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">parts&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><a name="Link39"> </a><span class="wsdlName">name</span><br /><span class="wsdlDocumentation">Is the name, as in the waiver database</span><br /></td></tr><tr><td align="left" valign="top" style="width:100%;background-color:#FFFFFF;"><table class="table-no-border" width="100%" cellspacing="2" cellpadding="2"><tr><td align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlWhite">type&nbsp;</span></td><td align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="wsdlName">xs:string</span></td></tr></table></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">used by&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><table class="table-no-border" width="100%" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" style="width:100%;background-color:#F0F0F0;"><span class="wsdlSubTitle">Operation </span><a href="#Link22"><span class="wsdlName">UserName</span></a><span class="wsdlSubTitle"> in PortType </span><a href="#Link3"><span class="wsdlName">Bocsy</span></a></td></tr></table></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="wsdlSubTitle">source&nbsp;</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><pre><span class="textOperator">&lt;</span><span class="textElement">wsdl:message</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;UserNameResponse</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:part</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;name</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xs:string</span><span class="textOperator">&quot;&gt;</span><span class="textContents">
+    </span><span class="textOperator">&lt;</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">Is the name, as in the waiver database</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:documentation</span><span class="textOperator">&gt;</span><span class="textContents">
+  </span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:part</span><span class="textOperator">&gt;</span><span class="textContents">
+</span><span class="textOperator">&lt;/</span><span class="textElement">wsdl:message</span><span class="textOperator">&gt;</span></pre></td>
+				</tr>
+			</table>
+			<a name="Link5"> </a>
+			<br />
+			<a name="Link3A"> </a>
+			<span class="elementHeader">complexType </span>
+			<span class="elementHeader2">FailureMessage</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="schemaSubTitle">diagram</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><img src="doc_p4.png" alt="doc_p4.png" style="border-style:none;" /></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="schemaSubTitle">namespace</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="schemaSubData">http://bocsy.komput.net/bocsy.php</span></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="schemaSubTitle">children</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="schemaName">tns:faultCode</span><span class="schemaName"> </span><span class="schemaName">tns:faultString</span></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="schemaSubTitle">source</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="textOperator">&lt;</span><span class="textElement">xsi:complexType</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;FailureMessage</span><span class="textOperator">&quot;&gt;</span><span class="textContents"><br />
+&nbsp; </span><span class="textOperator">&lt;</span><span class="textElement">xsi:all</span><span class="textOperator">&gt;</span><span class="textContents"><br />
+&nbsp;&nbsp;&nbsp; </span><span class="textOperator">&lt;</span><span class="textElement">xsi:element</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;faultCode</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xsi:int</span><span class="textOperator">&quot;/&gt;</span><span class="textContents"><br />
+&nbsp;&nbsp;&nbsp; </span><span class="textOperator">&lt;</span><span class="textElement">xsi:element</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;faultString</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xsi:string</span><span class="textOperator">&quot;/&gt;</span><span class="textContents"><br />
+&nbsp; </span><span class="textOperator">&lt;/</span><span class="textElement">xsi:all</span><span class="textOperator">&gt;</span><span class="textContents"><br />
+</span><span class="textOperator">&lt;/</span><span class="textElement">xsi:complexType</span><span class="textOperator">&gt;</span></td>
+				</tr>
+			</table>
+			<a name="Link9"> </a>
+			<br />
+			<a name="Link3B"> </a>
+			<span class="elementHeader">complexType </span>
+			<span class="elementHeader2">TLastDo</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="schemaSubTitle">diagram</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><img src="doc_p5.png" alt="doc_p5.png" style="border-style:none;" /></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="schemaSubTitle">namespace</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="schemaSubData">http://bocsy.komput.net/bocsy.php</span></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="schemaSubTitle">children</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="schemaName">tns:LastRole</span><span class="schemaName"> </span><span class="schemaName">tns:LastJob</span><span class="schemaName"> </span><span class="schemaName">tns:LastRoom</span></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="schemaSubTitle">source</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="textOperator">&lt;</span><span class="textElement">xsi:complexType</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;TLastDo</span><span class="textOperator">&quot;&gt;</span><span class="textContents"><br />
+&nbsp; </span><span class="textOperator">&lt;</span><span class="textElement">xsi:all</span><span class="textOperator">&gt;</span><span class="textContents"><br />
+&nbsp;&nbsp;&nbsp; </span><span class="textOperator">&lt;</span><span class="textElement">xsi:element</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;LastRole</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xsi:string</span><span class="textOperator">&quot;/&gt;</span><span class="textContents"><br />
+&nbsp;&nbsp;&nbsp; </span><span class="textOperator">&lt;</span><span class="textElement">xsi:element</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;LastJob</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xsi:string</span><span class="textOperator">&quot;/&gt;</span><span class="textContents"><br />
+&nbsp;&nbsp;&nbsp; </span><span class="textOperator">&lt;</span><span class="textElement">xsi:element</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;LastRoom</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xsi:string</span><span class="textOperator">&quot;/&gt;</span><span class="textContents"><br />
+&nbsp; </span><span class="textOperator">&lt;/</span><span class="textElement">xsi:all</span><span class="textOperator">&gt;</span><span class="textContents"><br />
+</span><span class="textOperator">&lt;/</span><span class="textElement">xsi:complexType</span><span class="textOperator">&gt;</span></td>
+				</tr>
+			</table>
+			<a name="Link7"> </a>
+			<br />
+			<a name="Link3C"> </a>
+			<span class="elementHeader">complexType </span>
+			<span class="elementHeader2">Timestamp</span>
+			<table class="table-border" width="100%" cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="schemaSubTitle">diagram</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#FFFFFF;"><img src="doc_p6.png" alt="doc_p6.png" style="border-style:none;" /></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="schemaSubTitle">namespace</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="schemaSubData">http://bocsy.komput.net/bocsy.php</span></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="schemaSubTitle">children</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="schemaName">tns:timestart</span><span class="schemaName"> </span><span class="schemaName">tns:timestop</span></td>
+				</tr>
+				<tr>
+					<td class="td-border" align="right" valign="top" style="width:10%;background-color:#F0F0F0;"><span class="schemaSubTitle">source</span></td>
+					<td class="td-border" align="left" valign="top" style="width:90%;background-color:#F0F0F0;"><span class="textOperator">&lt;</span><span class="textElement">xsi:complexType</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;Timestamp</span><span class="textOperator">&quot;&gt;</span><span class="textContents"><br />
+&nbsp; </span><span class="textOperator">&lt;</span><span class="textElement">xsi:all</span><span class="textOperator">&gt;</span><span class="textContents"><br />
+&nbsp;&nbsp;&nbsp; </span><span class="textOperator">&lt;</span><span class="textElement">xsi:element</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;timestart</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xsi:int</span><span class="textOperator">&quot;/&gt;</span><span class="textContents"><br />
+&nbsp;&nbsp;&nbsp; </span><span class="textOperator">&lt;</span><span class="textElement">xsi:element</span><span class="textAttr"> name</span><span class="textOperator">=</span><span class="textContents">&quot;timestop</span><span class="textOperator">&quot;</span><span class="textAttr"> type</span><span class="textOperator">=</span><span class="textContents">&quot;xsi:int</span><span class="textOperator">&quot;/&gt;</span><span class="textContents"><br />
+&nbsp; </span><span class="textOperator">&lt;/</span><span class="textElement">xsi:all</span><span class="textOperator">&gt;</span><span class="textContents"><br />
+</span><span class="textOperator">&lt;/</span><span class="textElement">xsi:complexType</span><span class="textOperator">&gt;</span></td>
+				</tr>
+			</table>
+			<br />
+			<span class="wsdlSubTitle">WSDL documentation generated by </span>
+			<a href="http://www.altova.com/xmlspy">
+				<span class="wsdlName">XMLSpy</span>
+			</a>
+			<span class="wsdlSubTitle"> WSDL Editor </span>
+			<a href="http://www.altova.com/xmlspy">
+				<span class="wsdlName">http://www.altova.com/xmlspy</span>
+			</a>
+		</div>
+	</body>
+</html>
