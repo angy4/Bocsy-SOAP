@@ -23,7 +23,7 @@ function db_connect()
 
 function wp_connect()
 {
-  $db = new myqli('#host#', '#login#', '#pass#', '#db#');
+  $db = new mysqli('#host#', '#login#', '#pass#', '#db#');
   return $db;
 }
 
@@ -52,3 +52,4 @@ function db_sel($q, $pos = 0)
   return $t[$pos];
 }
 }
+?>
