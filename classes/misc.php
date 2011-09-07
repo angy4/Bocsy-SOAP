@@ -51,5 +51,7 @@ function db_sel($q, $pos = 0)
   $t = $q->fetch_row();
   return $t[$pos];
 }
+
 }
+
 ?>

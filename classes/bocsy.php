@@ -17,5 +17,16 @@ public function Login($user, $pass, $ip)
 
   $q = ("SELECT name FROM timeaccounting_waiver WHERE id='%s'");
   $r = Misc::db_query($q);
-  $s1 = Misc::db_sel($r);
+  $w = Misc::db_sel($r);
 
+  if (!$w) throw new SoapFault('client', "No waiver");
+
+  return Session::create($s, $ip);
+  } else {
+  return 0;  
+#wp login
+  }
+}
+
+}
+?>

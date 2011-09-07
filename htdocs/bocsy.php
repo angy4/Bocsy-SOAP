@@ -3,7 +3,7 @@
 include('../classes/bocsy.php');
 
 ini_set("soap.wsdl_cache_enabled", "0");
-$server = new SopaServer("bocsy.wsdl");
+$server = new SoapServer("bocsy.wsdl");
 
 $server->setClass("Bocsy");
 
