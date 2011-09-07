@@ -34,5 +34,10 @@ public function Logout($session)
   return Session::destroy($session);
 }
 
+public function Active($session)
+{
+  return Session::active($session);
+}
+
 }
 ?>

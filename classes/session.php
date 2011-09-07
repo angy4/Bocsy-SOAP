@@ -24,6 +24,17 @@ public function destroy($session)
   $r = Misc::db_query($q);
   return 1;
 }
+
+public function active($session)
+{
+  $q = ("SELECT session FROM session WHERE session='$session'");
+  $r = Misc::db_query($q);
+  $s = Misc::db_row($r);
+
+  if (!$s) return 0;
+  return 1;
+}
+
 }
 
 ?>

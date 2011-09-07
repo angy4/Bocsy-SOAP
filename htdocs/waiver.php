@@ -1,4 +1,7 @@
 <?php
+
+if (isset($_SESSION['sid']))
+{
 $photo1 = $_POST['photo1'];
 $photo2 = $_POST['photo2'];
 $harm1 = $_POST['harm1'];
@@ -37,4 +40,10 @@ echo '<h3>Thank you ' . $name . '</h3>';
 ?>
 </body>
 </html>
-
+<?php
+}
+else
+{
+echo 'Wrong access, login first';
+}
+?>
