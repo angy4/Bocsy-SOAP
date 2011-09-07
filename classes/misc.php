@@ -21,12 +21,35 @@ function db_connect()
   return $db;
 }
 
-function db_query($a)
+function wp_connect()
+{
+  $db = new myqli('#host#', '#login#', '#pass#', '#db#');
+  return $db;
+}
+
+function db_query($q)
 {
   $db = Misc::db_connect();
   $xq = $db->query($q);
   return $xq;
 }
 
+function wp_query($q)
+{
+  $db = Misc::wp_connect();
+  $xq = $db->query($q);
+  return $xq;
+}
 
+function db_row($q)
+{
+  return $q->fetch_row();
+}
 
+function db_sel($q, $pos = 0)
+{
+  $t = $q->fetch_row();
+  return $t[$pos];
+}
+
+}
