@@ -29,5 +29,10 @@ public function Login($user, $pass, $ip)
   }
 }
 
+public function Logout($session)
+{
+  return Session::destroy($session);
+}
+
 }
 ?>
