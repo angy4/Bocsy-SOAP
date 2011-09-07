@@ -9,7 +9,7 @@ public function create($user, $ip)
   $time = time();
   $token = Misc::rand_token();
   $q = ("INSERT INTO session (session, uid, ip, timestart) VALUES ('$token', '$user', '$ip', '$time')");
-  Misc::db_insert($q);
+  Misc::db_query($q);
   return $token;
 }
 
@@ -21,7 +21,7 @@ public function destroy($session)
   if (!$s) return 0;
 
   $q = ("DELETE FROM session WHERE session='$session'");
-  $r = Misc::db_query'$q);
+  $r = Misc::db_query($q);
   return 1;
 }
 }

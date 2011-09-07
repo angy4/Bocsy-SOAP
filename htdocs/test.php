@@ -12,3 +12,6 @@ catch (SoapFault $fault)
 trigger_error("SOAP Fault: (faultcode: {$fault->faultcode}\n" .
   "faultstring: {$fault->faultstring})", E_USER_ERROR);
 }
+
+echo $ret;
+?>
