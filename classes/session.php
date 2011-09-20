@@ -27,11 +27,11 @@ public function destroy($session)
 
 public function active($session)
 {
-  $q = ("SELECT session FROM session WHERE session='$session'");
+  $q = ("SELECT timestart FROM session WHERE session='$session'");
   $r = Misc::db_query($q);
-  $s = Misc::db_row($r);
+  $s = Misc::db_sel($r);
 
-  if (!$s) return 0;
+  if ($s - 200 < time() ) return 0;
   return 1;
 }
 
