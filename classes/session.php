@@ -31,7 +31,8 @@ public function active($session)
   $r = Misc::db_query($q);
   $s = Misc::db_sel($r);
 
-  if ($s - 200 < time() ) return 0;
+// destroy session here?
+  if ($s - 200 < time()) return 0;
   return 1;
 }
 

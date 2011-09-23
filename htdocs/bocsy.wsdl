@@ -19,6 +19,7 @@
 					<xsi:element name="LastRole" type="xsi:string"/>
 					<xsi:element name="LastJob" type="xsi:string"/>
 					<xsi:element name="LastRoom" type="xsi:string"/>
+					<xsi:element name="Finish" type="xsi:string"/>
 				</xsi:all>
 			</xsi:complexType>
 		</xsi:schema>
