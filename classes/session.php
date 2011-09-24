@@ -37,8 +37,7 @@ public function active($session)
   $time = time();
   $q = ("UPDATE session SET timestart='$time' WHERE timestart='$s'");
   $r = Misc::db_query($q);
-  $s = Misc::db_sel($r); 
-  if ($s) return 1;
+  if ($r) return 1;
   return -1;
 }
 
