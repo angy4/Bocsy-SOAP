@@ -92,7 +92,7 @@ public function TLastDo($session)
   $TLastDo = array(
     'LastRole' => '',
     'LastJob' => '',
-    'LastRoom' => ''
+    'LastRoom' => '',
     'Finish' => ''
   );
 
