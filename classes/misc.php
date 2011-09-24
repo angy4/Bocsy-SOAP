@@ -1,5 +1,7 @@
 <?php
 
+include_once('db.php');
+
 class Misc {
 
 public function rand_token($len = 22)
@@ -13,18 +15,6 @@ public function rand_token($len = 22)
   $token = preg_replace("![Il10O+/]!", "", $token);
   $token = substr($token, 0, $len);
   return $token;
-}
-
-function db_connect()
-{
-  $db = new mysqli('#host#', '#login#', '#pass#', '#db#');
-  return $db;
-}
-
-function wp_connect()
-{
-  $db = new mysqli('#host#', '#login#', '#pass#', '#db#');
-  return $db;
 }
 
 function db_query($q)
