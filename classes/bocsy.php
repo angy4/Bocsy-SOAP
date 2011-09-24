@@ -80,7 +80,7 @@ public function TLastLog($session)
 {
   $uid = Bocsy::GetUID($session);
 
-  $q = "SELECT timestart, timestop FROM TLogin WHERE uid='$uid' ORDER BY timestart DESC LIMIT 1");
+  $q = ("SELECT timestart, timestop FROM TLogin WHERE uid='$uid' ORDER BY timestart DESC LIMIT 1");
   $r = Misc::db_query($q);
   $s = Misc::db_row($r);
 
