@@ -32,7 +32,7 @@ public function active($session)
   $s = Misc::db_sel($r);
 
 // destroy session here?
-  if ($s - 200 < time()) return 0;
+  if ($s - 200 > time()) return 0;
   return 1;
 }
 
