@@ -45,7 +45,7 @@ public function UserName($session)
 
   $q = ("SELECT name FROM timeaccounting_waiver WHERE id=(SELECT uid FROM session WHERE session='$session')");
   $r = Misc::db_query($q);
-  $s = Misc::selt($r);
+  $s = Misc::db_sel($r);
 
   if (!$s) throw new SoapFault('client', 'Internal Error when fetching result from UserName');
   return $s;
@@ -62,7 +62,7 @@ public function GetUID($session)
 
   $q = ("SELECT uid FROM session WHERE session='$session'");
   $r = Misc::db_query($q);
-  $s = Misc::selt($r);
+  $s = Misc::db_sel($r);
 
   if (!$s) throw new SoapFault('client', 'Internal Error when fetching result from GetUID');
   return $s;
