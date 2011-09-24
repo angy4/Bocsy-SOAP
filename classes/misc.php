@@ -1,8 +1,8 @@
 <?php
 
+include_once('db.php');
 
 class Misc {
-include_once('db.php');
 
 public function rand_token($len = 22)
 {
@@ -19,14 +19,14 @@ public function rand_token($len = 22)
 
 function db_query($q)
 {
-  $db = Misc::db_connect();
+  $db = DB::db_connect();
   $xq = $db->query($q);
   return $xq;
 }
 
 function wp_query($q)
 {
-  $db = Misc::wp_connect();
+  $db = DB::wp_connect();
   $xq = $db->query($q);
   return $xq;
 }
