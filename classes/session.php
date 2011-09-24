@@ -33,7 +33,13 @@ public function active($session)
 
 // destroy session here?
   if ($s - 200 > time()) return 0;
-  return 1;
+  // regen session
+  $time = time();
+  $q = ("UPDATE session SET timestart='$time' WHERE timestart='$s'");
+  $r = Misc::db_query($q);
+  $s = Misc::db_sel($r); 
+  if ($s) return 1;
+  return -1
 }
 
 }

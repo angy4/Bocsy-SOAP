@@ -39,7 +39,7 @@ public function UserName($session)
   if (!Session::active($session)) 
   {
     throw new SoapFault('client', 'Session inactive');
-    Session::destroy;
+    Session::destroy();
     // Move destroy part into Session class?
   }
 
@@ -56,7 +56,7 @@ public function GetUID($session)
   if (!Session::active($session))
   {
     throw new SoapFault('client', 'Session inactive');
-    Session::destroy;
+    Session::destroy();
     // Move destroy part into Session class?
   }
 
