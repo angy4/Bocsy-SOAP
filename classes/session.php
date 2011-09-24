@@ -39,7 +39,7 @@ public function active($session)
   $r = Misc::db_query($q);
   $s = Misc::db_sel($r); 
   if ($s) return 1;
-  return -1
+  return -1;
 }
 
 }
