@@ -98,7 +98,7 @@ public function TLastDo($session)
 
   $uid = Bocsy::GetUID($session);
 
-  $q = ("SELECT role, job, room, timestop FROM TLogin WHERE uid='$uid' OREDER BY timestart DESC LIMIT 1")
+  $q = ("SELECT role, job, room, timestop FROM TLogin WHERE uid='$uid' OREDER BY timestart DESC LIMIT 1");
   $r = Misc::db_query($q);
   $s = Misc::db_row($r);
 
