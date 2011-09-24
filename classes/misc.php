@@ -1,8 +1,8 @@
 <?php
 
-include_once('db.php');
 
 class Misc {
+include_once('db.php');
 
 public function rand_token($len = 22)
 {

@@ -1,3 +1,5 @@
+<?php
+
 function db_connect()
 {
   $db = new mysqli('#host#', '#login#', '#pass#', '#db#');
@@ -9,3 +11,4 @@ function wp_connect()
   $db = new mysqli('#host#', '#login#', '#pass#', '#db#');
   return $db;
 }
+?>
