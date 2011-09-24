@@ -43,7 +43,7 @@ public function UserName($session)
     // Move destroy part into Session class?
   }
 
-  $q = ("SELECT name FROM timeaccounting_waiver WHERE id=(SELECT uid FROM session WHERE session='$session')");
+  $q = ("SELECT name FROM timeaccounting_waiver WHERE xrefid=(SELECT uid FROM session WHERE session='$session')");
   $r = Misc::db_query($q);
   $s = Misc::db_sel($r);
 
