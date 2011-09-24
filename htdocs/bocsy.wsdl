@@ -78,7 +78,7 @@
 <wsdl:part name="session" type="xs:string"/>
 </wsdl:message>
 <wsdl:message name="GetUIDResponse">
-<wsdl:part name="response" type="tns:TLastDo"/>
+<wsdl:part name="response" type="xs:string"/>
 </wsdl:message>
 <wsdl:portType name="Bocsy">
 <wsdl:operation name="Login">
@@ -181,7 +181,7 @@
 <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
 </wsdl:output>
 </wsdl:operation>
-<wsdl:operation name="TLastDo">
+<wsdl:operation name="GetUID">
 <soap:operation soapAction="urn:#GetUID"/>
 <wsdl:input>
 <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
