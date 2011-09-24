@@ -16,7 +16,7 @@ public function Login($user, $pass, $ip)
   
   if (!$s) throw new SoapFault('client', "Bad Login", 'global', 'details', 'FailureMessage');
 
-  $q = ("SELECT name FROM timeaccounting_waiver WHERE id='$s'");
+  $q = ("SELECT name FROM timeaccounting_waiver WHERE xrefid='$s'");
   $r = Misc::db_query($q);
   $w = Misc::db_sel($r);
 
