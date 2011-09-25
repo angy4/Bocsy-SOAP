@@ -22,15 +22,15 @@
         <xsi:element name="Finish" type="xsi:string"/>
       </xsi:all>
     </xsi:complexType>
-      
-      <xsd:complexType name="ArrayOfString">
-        <xsd:complexContent>
-          <xsd:restriction base="soapenc:Array">
-            <xsd:attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]"/>
-          </xsd:restriction>
-       </xsd:complexContent>
-      </xsd:complexType>
 
+    <xsi:complexType name="ArrayOfString">
+      <xsi:complexContent>
+        <xsi:restriction base="soapenc:Array">
+          <xsi:attribute ref="soapenc:arrayType" wsdl:arrayType="xsi:string[]"/>
+        </xsi:restriction>
+      </xsi:complexContent>
+    </xsi:complexType>
+      
     <xsi:complexType name="DoubleListStruct">
       <xsi:all>
         <xsi:element name="id" type="tns:ArrayOfString"/>
