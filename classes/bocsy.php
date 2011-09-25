@@ -117,7 +117,7 @@ public function GetJobList($session)
   $DLS = array(
     'id' => array(),
     'job' => array()
-  )
+  );
 
   $q = ("SELECT id, name FROM timeaccounting_rolenames ORDER BY id ASC");
   $r = Misc::db_query($q);
