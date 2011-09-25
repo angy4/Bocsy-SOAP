@@ -40,9 +40,11 @@
 				</xsi:all>
 			</xsi:complexType>
 			<xsi:complexType name="ArrayString">
-				<xsi:restriction base="soapenc:Array">
-					<xsi:attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]"/>
-				</xsi:restriction>
+				<xsi:complexContent>
+					<xsi:restriction base="soapenc:Array">
+						<xsi:attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]"/>
+					</xsi:restriction>
+				</xsi:complexContent>
 			</xsi:complexType>
 		</xsi:schema>
 	</wsdl:types>
