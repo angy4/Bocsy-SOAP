@@ -27,7 +27,7 @@
         <xsi:element ref="soapenc:arrayType" wsdl:arrayType="xsi:string[]"/>
       </xsi:all>
     </xsi:complexType>
----!>
+--->
       <xsd:complexType name="ArrayOfString">
         <xsd:complexContent>
           <xsd:restriction base="soapenc:Array">
