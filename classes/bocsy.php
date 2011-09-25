@@ -119,7 +119,7 @@ public function GetJobList($session)
     'job' => array()
   );
 
-  $q = ("SELECT id, name FROM timeaccounting_rolenames ORDER BY id ASC");
+  $q = ("SELECT id, name FROM timeaccounting_jobnames ORDER BY id ASC");
   $r = Misc::db_query($q);
   $i = 0;
   while ($s = mysqli_fetch_row($r)) {
@@ -129,7 +129,7 @@ public function GetJobList($session)
   }
   $r->close();
 
-  return new SoapParam($DLS, 'DoubleListStruct');
+  return new SoapParam($DLS, 'JobResponse');
 }
 
 }
