@@ -122,12 +122,17 @@ public function GetJobList($session)
   $q = ("SELECT id, name FROM timeaccounting_jobnames ORDER BY id ASC");
   $r = Misc::db_query($q);
   $i = 0;
-  while ($s = mysqli_fetch_row($r)) {
-    $DLS['id'][$i] = $s[0];
-    $DLS['job'][$i] = $s[1];
-    $i++;
-  }
+//  while ($s = mysqli_fetch_row($r)) {
+//    $DLS['id'][$i] = $s[0];
+//    $DLS['job'][$i] = $s[1];
+//    $i++;
+//  }
   $r->close();
+
+$DLS['id'][0] = '1';
+$DLS['job'][0] = 'murder';
+$DLS['id'][1] = '2';
+$DLS['job'][1] = 'cleanup';
 
   return new SoapParam($DLS, 'JobList');
 }
