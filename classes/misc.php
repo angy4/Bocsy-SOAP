@@ -34,11 +34,18 @@ function wp_query($q)
 function db_row($q)
 {
   return $q->fetch_row();
+  $q->close();
+}
+
+function db_wrow($q)
+{
+  return $q->fetch_row();
 }
 
 function db_sel($q, $pos = 0)
 {
   $t = $q->fetch_row();
+  $q->close();
   return $t[$pos];
 }
 

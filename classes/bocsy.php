@@ -112,5 +112,25 @@ public function TLastDo($session)
   return new SoapParam($response, 'TLastDo');
 }
 
+public function GetJobList($session)
+{
+  $DLS = array(
+    'id' => array(),
+    'job' => array()
+  )
+
+  $q = ("SELECT id, name FROM timeaccounting_rolenames ORDER BY id ASC");
+  $r = Misc::db_query($q);
+  $i = 0;
+  while ($s = Misc::db_wrow($r)) {
+    $DLS['id'][$i] = $s[0];
+    $DLS['job'][$i] = $s[1];
+    $i++;
+  }
+  $r->close();
+
+  return new SoapParam($DLS, 'DoubleListStruct');
+}
+
 }
 ?>
