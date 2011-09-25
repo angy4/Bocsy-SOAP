@@ -21,16 +21,25 @@
 					<xsi:element name="Finish" type="xsi:string"/>
 				</xsi:all>
 			</xsi:complexType>
-			<xsi:complexType name="DoubleListStruct">
+			<xsi:complexType name="JobList">
 				<xsi:all>
 					<xsi:element name="id" type="tns:ArrayString"/>
-					<xsi:element name="string" type="tns:ArrayString"/>
+					<xsi:element name="job" type="tns:ArrayString"/>
+				</xsi:all>
+			</xsi:complexType>
+			<xsi:complexType name="RoomList">
+				<xsi:all>
+					<xsi:element name="id" type="tns:ArrayString"/>
+					<xsi:element name="room" type="tns:ArrayString"/>
+				</xsi:all>
+			</xsi:complexType>
+			<xsi:complexType name="RoleList">
+				<xsi:all>
+					<xsi:element name="id" type="tns:ArrayString"/>
+					<xsi:element name="role" type="tns:ArrayString"/>
 				</xsi:all>
 			</xsi:complexType>
 			<xsi:complexType name="ArrayString">
-				<xsi:sequence maxOccurs="unbounded">
-					<xsi:element ref="soapenc:string" maxOccurs="unbounded"/>
-				</xsi:sequence>
 				<xsi:attribute ref="soapenc:arrayType"/>
 			</xsi:complexType>
 		</xsi:schema>
@@ -52,7 +61,6 @@
 	<wsdl:message name="TLoginResponse">
 		<wsdl:part name="success" type="xs:boolean"/>
 	</wsdl:message>
-	<wsdl:message name="NewMessage"/>
 	<wsdl:message name="LogoutRequest">
 		<wsdl:part name="session" type="xs:string"/>
 	</wsdl:message>
@@ -95,8 +103,14 @@
 	<wsdl:message name="ListRequest">
 		<wsdl:part name="session" type="xs:string"/>
 	</wsdl:message>
-	<wsdl:message name="ListResponse">
-		<wsdl:part name="response" type="tns:DoubleListStruct"/>
+	<wsdl:message name="JobResponse">
+		<wsdl:part name="response" type="tns:JobList"/>
+	</wsdl:message>
+	<wsdl:message name="RoomResponse">
+		<wsdl:part name="response" type="tns:RoomList"/>
+	</wsdl:message>
+	<wsdl:message name="RoleResponse">
+		<wsdl:part name="response" type="tns:RoleList"/>
 	</wsdl:message>
 	<wsdl:portType name="Bocsy">
 		<wsdl:operation name="Login">
@@ -134,7 +148,15 @@
 		</wsdl:operation>
 		<wsdl:operation name="GetJobList">
 			<wsdl:input message="tns:ListRequest"/>
-			<wsdl:output message="tns:ListResponse"/>
+			<wsdl:output message="tns:JobResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="GetRoomList">
+			<wsdl:input message="tns:ListRequest"/>
+			<wsdl:output message="tns:RoomResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="GetRoleList">
+			<wsdl:input message="tns:ListRequest"/>
+			<wsdl:output message="tns:RoleResponse"/>
 		</wsdl:operation>
 	</wsdl:portType>
 	<wsdl:binding name="Bocsy" type="tns:Bocsy">
@@ -214,6 +236,24 @@
 		</wsdl:operation>
 		<wsdl:operation name="GetJobList">
 			<soap:operation soapAction="urn:#GetJobList"/>
+			<wsdl:input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetRoomList">
+			<soap:operation soapAction="urn:#GetRoomList"/>
+			<wsdl:input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetRoleList">
+			<soap:operation soapAction="urn:#GetRoleList"/>
 			<wsdl:input>
 				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
 			</wsdl:input>
