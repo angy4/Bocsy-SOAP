@@ -129,7 +129,7 @@ public function GetJobList($session)
   }
   $r->close();
 
-  return new SoapParam($DLS, 'JobResponse');
+  return new SoapParam($DLS, 'JobList');
 }
 
 }
