@@ -37,198 +37,207 @@
 </wsdl:types>
 
 <wsdl:message name="LoginRequest">
-<wsdl:part name="username" type="xs:string"/>
-<wsdl:part name="password" type="xs:string"/>
-<wsdl:part name="ip" type="xs:string"/>
+  <wsdl:part name="username" type="xs:string"/>
+  <wsdl:part name="password" type="xs:string"/>
+  <wsdl:part name="ip" type="xs:string"/>
 </wsdl:message>
-<wsdl:message name="LoginResponse">
-<wsdl:part name="session" type="xs:string"/>
+  <wsdl:message name="LoginResponse">
+  <wsdl:part name="session" type="xs:string"/>
 </wsdl:message>
 <wsdl:message name="TLoginRequest">
-<wsdl:part name="session" type="xs:string"/>
-<wsdl:part name="role" type="xs:string"/>
-<wsdl:part name="room" type="xs:string"/>
-<wsdl:part name="job" type="xs:string"/>
+  <wsdl:part name="session" type="xs:string"/>
+  <wsdl:part name="role" type="xs:string"/>
+  <wsdl:part name="room" type="xs:string"/>
+  <wsdl:part name="job" type="xs:string"/>
 </wsdl:message>
-<wsdl:message name="TLoginResponse">
-<wsdl:part name="success" type="xs:boolean"/>
+  <wsdl:message name="TLoginResponse">
+  <wsdl:part name="success" type="xs:boolean"/>
 </wsdl:message>
-<wsdl:message name="NewMessage"/>
-<wsdl:message name="LogoutRequest">
-<wsdl:part name="session" type="xs:string"/>
+  <wsdl:message name="NewMessage"/>
+  <wsdl:message name="LogoutRequest">
+  <wsdl:part name="session" type="xs:string"/>
 </wsdl:message>
-<wsdl:message name="LogoutResponse">
-<wsdl:part name="success" type="xs:boolean"/>
+  <wsdl:message name="LogoutResponse">
+  <wsdl:part name="success" type="xs:boolean"/>
 </wsdl:message>
-<wsdl:message name="UserNameRequest">
-<wsdl:part name="session" type="xs:string"/>
+  <wsdl:message name="UserNameRequest">
+  <wsdl:part name="session" type="xs:string"/>
 </wsdl:message>
-<wsdl:message name="UserNameResponse">
-<wsdl:part name="name" type="xs:string"/>
+  <wsdl:message name="UserNameResponse">
+  <wsdl:part name="name" type="xs:string"/>
 </wsdl:message>
-<wsdl:message name="FailureMessage">
-<wsdl:part name="error" type="tns:FailureMessage"/>
+  <wsdl:message name="FailureMessage">
+  <wsdl:part name="error" type="tns:FailureMessage"/>
 </wsdl:message>
-<wsdl:message name="TLogoutRequest">
-<wsdl:part name="session" type="xs:string"/>
+  <wsdl:message name="TLogoutRequest">
+  <wsdl:part name="session" type="xs:string"/>
 </wsdl:message>
-<wsdl:message name="TLogoutResponse">
-<wsdl:part name="success" type="xs:boolean"/>
+  <wsdl:message name="TLogoutResponse">
+  <wsdl:part name="success" type="xs:boolean"/>
 </wsdl:message>
-<wsdl:message name="TLastLogRequest">
-<wsdl:part name="session" type="xs:string"/>
+  <wsdl:message name="TLastLogRequest">
+  <wsdl:part name="session" type="xs:string"/>
 </wsdl:message>
-<wsdl:message name="TLastLogResponse">
-<wsdl:part name="timestamp" type="xs:string"/>
+  <wsdl:message name="TLastLogResponse">
+  <wsdl:part name="timestamp" type="xs:string"/>
 </wsdl:message>
-<wsdl:message name="TLastDoRequest">
-<wsdl:part name="session" type="xs:string"/>
+  <wsdl:message name="TLastDoRequest">
+  <wsdl:part name="session" type="xs:string"/>
 </wsdl:message>
-<wsdl:message name="TLastDoResponse">
-<wsdl:part name="response" type="tns:TLastDo"/>
+  <wsdl:message name="TLastDoResponse">
+  <wsdl:part name="response" type="tns:TLastDo"/>
 </wsdl:message>
-<wsdl:message name="GetUIDRequest">
-<wsdl:part name="session" type="xs:string"/>
+  <wsdl:message name="GetUIDRequest">
+  <wsdl:part name="session" type="xs:string"/>
 </wsdl:message>
-<wsdl:message name="GetUIDResponse">
-<wsdl:part name="response" type="xs:string"/>
+  <wsdl:message name="GetUIDResponse">
+  <wsdl:part name="response" type="xs:string"/>
 </wsdl:message>
-<wsdl:message name="ListRequest">
-<wsdl:part name="session" type="xs:string"/>
+  <wsdl:message name="ListRequest">
+  <wsdl:part name="session" type="xs:string"/>
 </wsdl:message>
-<wsdl:message name="ListResponse">
-<wsdl:part name="response" type="tns:DoubleListStruct"/>
+  <wsdl:message name="ListResponse">
+  <wsdl:part name="response" type="tns:DoubleListStruct"/>
 </wsdl:message>
 
 <wsdl:portType name="Bocsy">
-<wsdl:operation name="Login">
-<wsdl:input message="tns:LoginRequest"/>
-<wsdl:output message="tns:LoginResponse"/>
-<wsdl:fault name="Failure" message="tns:FailureMessage"/>
-</wsdl:operation>
-<wsdl:operation name="TLogin">
-<wsdl:input message="tns:TLoginRequest"/>
-<wsdl:output message="tns:TLoginResponse"/>
-</wsdl:operation>
-<wsdl:operation name="Logout">
-<wsdl:input message="tns:LogoutRequest"/>
-<wsdl:output message="tns:LogoutResponse"/>
-</wsdl:operation>
-<wsdl:operation name="UserName">
-<wsdl:input message="tns:UserNameRequest"/>
-<wsdl:output message="tns:UserNameResponse"/>
-</wsdl:operation>
-<wsdl:operation name="TLogout">
-<wsdl:input message="tns:TLogoutRequest"/>
-<wsdl:output message="tns:TLogoutResponse"/>
-</wsdl:operation>
-<wsdl:operation name="TLastLog">
-<wsdl:input message="tns:TLastLogRequest"/>
-<wsdl:output message="tns:TLastLogResponse"/>
-</wsdl:operation>
-<wsdl:operation name="TLastDo">
-<wsdl:input message="tns:TLastDoRequest"/>
-<wsdl:output message="tns:TLastDoResponse"/>
-</wsdl:operation>
-<wsdl:operation name="GetUID">
-<wsdl:input message="tns:GetUIDRequest"/>
-<wsdl:output message="tns:GetUIDResponse"/>
-</wsdl:operation>
-<wsdl:operation name="GetRoleList">
-<wsdl:input message="tns:ListRequest"/>
-<wsdl:output message="tns:ListResponse"/>
-</wsdl:operation>
-<wsdl:operation name="GetRoomList">
-<wsdl:input message="tns:ListRequest"/>
-<wsdl:output message="tns:ListResponse"/>
-</wsdl:operation>
-<wsdl:operation name="GetJobList">
-<wsdl:input message="tns:ListRequest"/>
-<wsdl:output message="tns:ListResponse"/>
-</wsdl:operation>
+  <wsdl:operation name="Login">
+    <wsdl:input message="tns:LoginRequest"/>
+    <wsdl:output message="tns:LoginResponse"/>
+    <wsdl:fault name="Failure" message="tns:FailureMessage"/>
+  </wsdl:operation>
+  <wsdl:operation name="TLogin">
+    <wsdl:input message="tns:TLoginRequest"/>
+    <wsdl:output message="tns:TLoginResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="Logout">
+    <wsdl:input message="tns:LogoutRequest"/>
+    <wsdl:output message="tns:LogoutResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="UserName">
+    <wsdl:input message="tns:UserNameRequest"/>
+    <wsdl:output message="tns:UserNameResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="TLogout">
+    <wsdl:input message="tns:TLogoutRequest"/>
+    <wsdl:output message="tns:TLogoutResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="TLastLog">
+    <wsdl:input message="tns:TLastLogRequest"/>
+    <wsdl:output message="tns:TLastLogResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="TLastDo">
+    <wsdl:input message="tns:TLastDoRequest"/>
+    <wsdl:output message="tns:TLastDoResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="GetUID">
+    <wsdl:input message="tns:GetUIDRequest"/>
+    <wsdl:output message="tns:GetUIDResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="GetRoleList">
+    <wsdl:input message="tns:ListRequest"/>
+    <wsdl:output message="tns:ListResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="GetRoomList">
+    <wsdl:input message="tns:ListRequest"/>
+    <wsdl:output message="tns:ListResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="GetJobList">
+    <wsdl:input message="tns:ListRequest"/>
+    <wsdl:output message="tns:ListResponse"/>
+  </wsdl:operation>
 </wsdl:portType>
 
 <wsdl:binding name="Bocsy" type="tns:Bocsy">
-<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
-<wsdl:operation name="Login">
-<soap:operation soapAction="urn:#Login"/>
-<wsdl:input>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:input>
-<wsdl:output>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:output>
-<wsdl:fault name="Failure"/>
-</wsdl:operation>
-<wsdl:operation name="TLogin">
-<soap:operation soapAction="urn:#TLogin"/>
-<wsdl:input>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:input>
-<wsdl:output>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:output>
-</wsdl:operation>
-<wsdl:operation name="Logout">
-<soap:operation soapAction="urn:#Logout"/>
-<wsdl:input>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:input>
-<wsdl:output>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:output>
-</wsdl:operation>
-<wsdl:operation name="UserName">
-<soap:operation soapAction="urn:#UserName"/>
-<wsdl:input>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:input>
-<wsdl:output>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:output>
-</wsdl:operation>
-<wsdl:operation name="TLogout">
-<soap:operation soapAction="urn:#TLogout"/>
-<wsdl:input>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:input>
-<wsdl:output>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:output>
-</wsdl:operation>
-<wsdl:operation name="TLastLog">
-<soap:operation soapAction="urn:#TLastLog"/>
-<wsdl:input>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:input>
-<wsdl:output>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:output>
-</wsdl:operation>
-<wsdl:operation name="TLastDo">
-<soap:operation soapAction="urn:#TLastDo"/>
-<wsdl:input>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:input>
-<wsdl:output>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:output>
-</wsdl:operation>
-<wsdl:operation name="GetUID">
-<soap:operation soapAction="urn:#GetUID"/>
-<wsdl:input>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:input>
-<wsdl:output>
-<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:output>
-</wsdl:operation>
+  <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <wsdl:operation name="Login">
+    <soap:operation soapAction="urn:#Login"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+      </wsdl:output>
+    <wsdl:fault name="Failure"/>
+  </wsdl:operation>
+  <wsdl:operation name="TLogin">
+  <soap:operation soapAction="urn:#TLogin"/>
+    <wsdl:input>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:input>
+    <wsdl:output>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:output>
+  </wsdl:operation>
+  <wsdl:operation name="Logout">
+  <soap:operation soapAction="urn:#Logout"/>
+    <wsdl:input>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:input>
+    <wsdl:output>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:output>
+  </wsdl:operation>
+  <wsdl:operation name="UserName">
+  <soap:operation soapAction="urn:#UserName"/>
+    <wsdl:input>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:input>
+    <wsdl:output>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:output>
+  </wsdl:operation>
+  <wsdl:operation name="TLogout">
+  <soap:operation soapAction="urn:#TLogout"/>
+    <wsdl:input>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:input>
+    <wsdl:output>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:output>
+  </wsdl:operation>
+  <wsdl:operation name="TLastLog">
+  <soap:operation soapAction="urn:#TLastLog"/>
+    <wsdl:input>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:input>
+    <wsdl:output>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:output>
+  </wsdl:operation>
+  <wsdl:operation name="TLastDo">
+  <soap:operation soapAction="urn:#TLastDo"/>
+    <wsdl:input>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:input>
+    <wsdl:output>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:output>
+  </wsdl:operation>
+  <wsdl:operation name="GetUID">
+  <soap:operation soapAction="urn:#GetUID"/>
+    <wsdl:input>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:input>
+    <wsdl:output>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:output>
+  </wsdl:operation>
+  <soap:operation soapAction="urn:#GetJobList"/>
+    <wsdl:input>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:input>
+    <wsdl:output>
+      <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
+    </wsdl:output>
+  </wsdl:operation>
 </wsdl:binding>
 
 <wsdl:service name="BÃƒÂ–CSy">
-<wsdl:port name="bocsy" binding="tns:Bocsy">
-<soap:address location="http://bocsy.komput.net/bocsy.php"/>
-</wsdl:port>
+  <wsdl:port name="bocsy" binding="tns:Bocsy">
+  <soap:address location="http://bocsy.komput.net/bocsy.php"/>
+  </wsdl:port>
 </wsdl:service>
+
 </wsdl:definitions>
 
