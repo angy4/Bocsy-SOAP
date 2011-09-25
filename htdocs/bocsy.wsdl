@@ -24,7 +24,7 @@
     </xsi:complexType>
     <xsi:complexType name="ArrayOfString">
       <xsi:all>
-        <xsi:element ref="soapenc:arrayType" type="xsi:string[]"/>
+        <xsi:element ref="soapenc:arrayType" wsdl:arrayType="xsi:string[]"/>
       </xsi:all>
     </xsi:complexType>
     <xsi:complexType name="DoubleListStruct">
