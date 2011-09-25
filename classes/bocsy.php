@@ -129,13 +129,47 @@ public function GetJobList($session)
   }
   $r->close();
 
-//$DLS['id']['0'] = '1';
-//$DLS['job']['0'] = 'murder';
-//$DLS['id']['1'] = '2';
-//$DLS['job']['1'] = 'cleanup';
-
   return new SoapParam($DLS, 'JobList');
 }
 
+public function GetRoleList($session)
+{
+  $DLS = array(
+    'id' => array(),
+    'role' => array()
+  );
+
+  $q = ("SELECT id, name FROM timeaccounting_rolenames ORDER BY id ASC");
+  $r = Misc::db_query($q);
+  $i = 0;
+  while ($s = mysqli_fetch_row($r)) {
+    $DLS['id'][$i] = $s[0];
+    $DLS['role'][$i] = $s[1];
+    $i++;
+  }
+  $r->close();
+
+  return new SoapParam($DLS, 'RoleList');
+}
+
+public function GetRoomList($session)
+{
+  $DLS = array(
+    'id' => array(),
+    'room' => array()
+  );
+
+  $q = ("SELECT id, name FROM timeaccounting_roomnames ORDER BY id ASC");
+  $r = Misc::db_query($q);
+  $i = 0;
+  while ($s = mysqli_fetch_row($r)) {
+    $DLS['id'][$i] = $s[0];
+    $DLS['room'][$i] = $s[1];
+    $i++;
+  }
+  $r->close();
+
+  return new SoapParam($DLS, 'RoomList');
+}
 }
 ?>
