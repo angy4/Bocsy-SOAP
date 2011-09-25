@@ -1,39 +1,39 @@
 <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://bocsy.komput.net/bocsy.php" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" name="BÃƒÂ–CSy" targetNamespace="http://bocsy.komput.net/bocsy.php">
 
 <wsdl:types>
-<xsi:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema" targetNamespace="http://bocsy.komput.net/bocsy.php" elementFormDefault="qualified">
-<xsi:complexType name="Timestamp">
-<xsi:all>
-<xsi:element name="timestart" type="xsi:int"/>
-<xsi:element name="timestop" type="xsi:int"/>
-</xsi:all>
-</xsi:complexType>
-<xsi:complexType name="FailureMessage">
-<xsi:all>
-<xsi:element name="faultCode" type="xsi:int"/>
-<xsi:element name="faultString" type="xsi:string"/>
-</xsi:all>
-</xsi:complexType>
-<xsi:complexType name="TLastDo">
-<xsi:all>
-<xsi:element name="LastRole" type="xsi:string"/>
-<xsi:element name="LastJob" type="xsi:string"/>
-<xsi:element name="LastRoom" type="xsi:string"/>
-<xsi:element name="Finish" type="xsi:string"/>
-</xsi:all>
-</xsi:complexType>
-<xsi:complexType name="ArrayOfString">
-<xsi:element ref="soapenc:arrayType" type="xsi:string[]"/>
-<xsi:all>
-</xsi:complexType>
-<xsi:complexType name="DoubleListStruct">
-<xsi:element name="id" type="tns:ArrayOfString"/>
-<xsi:element name="string" type="tns:ArrayOfString"/>
-<xsi:all>
-</xsi:complexType>
-</xsi:all>
-
-</xsi:schema>
+  <xsi:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema" targetNamespace="http://bocsy.komput.net/bocsy.php" elementFormDefault="qualified">
+    <xsi:complexType name="Timestamp">
+      <xsi:all>
+        <xsi:element name="timestart" type="xsi:int"/>
+        <xsi:element name="timestop" type="xsi:int"/>
+      </xsi:all>
+    </xsi:complexType>
+    <xsi:complexType name="FailureMessage">
+      <xsi:all>
+        <xsi:element name="faultCode" type="xsi:int"/>
+        <xsi:element name="faultString" type="xsi:string"/>
+      </xsi:all>
+    </xsi:complexType>
+    <xsi:complexType name="TLastDo">
+      <xsi:all>
+        <xsi:element name="LastRole" type="xsi:string"/>
+        <xsi:element name="LastJob" type="xsi:string"/>
+        <xsi:element name="LastRoom" type="xsi:string"/>
+        <xsi:element name="Finish" type="xsi:string"/>
+      </xsi:all>
+    </xsi:complexType>
+    <xsi:complexType name="ArrayOfString">
+      <xsi:all>
+        <xsi:element ref="soapenc:arrayType" type="xsi:string[]"/>
+      </xsi:all>
+    </xsi:complexType>
+    <xsi:complexType name="DoubleListStruct">
+      <xsi:all>
+        <xsi:element name="id" type="tns:ArrayOfString"/>
+        <xsi:element name="string" type="tns:ArrayOfString"/>
+      </xsi:all>
+    </xsi:complexType>
+  </xsi:schema>
 </wsdl:types>
 
 <wsdl:message name="LoginRequest">
