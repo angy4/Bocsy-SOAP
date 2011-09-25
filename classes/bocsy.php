@@ -129,10 +129,10 @@ public function GetJobList($session)
 //  }
   $r->close();
 
-$DLS['id'][0] = '1';
-$DLS['job'][0] = 'murder';
-$DLS['id'][1] = '2';
-$DLS['job'][1] = 'cleanup';
+$DLS['id']['0'] = '1';
+$DLS['job']['0'] = 'murder';
+$DLS['id']['1'] = '2';
+$DLS['job']['1'] = 'cleanup';
 
   return new SoapParam($DLS, 'JobList');
 }
