@@ -40,7 +40,7 @@
 				</xsi:all>
 			</xsi:complexType>
 			<xsi:complexType name="ArrayString">
-				<xsi:attribute ref="soapenc:arrayType"/>
+				<xsi:attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]"/>
 			</xsi:complexType>
 		</xsi:schema>
 	</wsdl:types>
