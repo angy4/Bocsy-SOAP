@@ -140,7 +140,7 @@
   </wsdl:operation>
   <wsdl:operation name="GetRoleList">
     <wsdl:input message="tns:ListRequest"/>
-    <wsdl:output message="tns:ListResponse"/>
+    <wsdl:output message="wsdlns:ListResponse"/>
   </wsdl:operation>
   <wsdl:operation name="GetRoomList">
     <wsdl:input message="tns:ListRequest"/>
