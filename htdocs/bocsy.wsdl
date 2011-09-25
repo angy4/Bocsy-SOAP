@@ -22,11 +22,11 @@
 <xsi:element name="Finish" type="xsi:string"/>
 </xsi:all>
 </xsi:complexType>
-<xsi:complexYpe name="ArrayOfString">
+<xsi:complexType name="ArrayOfString">
 <xsi:element ref="soapenc:arrayType" type="xsi:string[]"/>
 <xsi:all>
 </xsi:complexType>
-<xsi:complexYpe name="DoubleListStruct">
+<xsi:complexType name="DoubleListStruct">
 <xsi:element name="id" type="tns:ArrayOfString"/>
 <xsi:element name="string" type="tns:ArrayOfString"/>
 <xsi:all>
