@@ -223,6 +223,7 @@
       <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
     </wsdl:output>
   </wsdl:operation>
+  <wsdl:operation name="GetJobList">
   <soap:operation soapAction="urn:#GetJobList"/>
     <wsdl:input>
       <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://bocsy.komput.net/bocsy.php"/>
