@@ -122,7 +122,7 @@ public function GetJobList($session)
   $q = ("SELECT id, name FROM timeaccounting_rolenames ORDER BY id ASC");
   $r = Misc::db_query($q);
   $i = 0;
-  while ($s = Misc::db_wrow($r)) {
+  while ($s = mysqli_fetch_row($r)) {
     $DLS['id'][$i] = $s[0];
     $DLS['job'][$i] = $s[1];
     $i++;
